@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat((8, 60px));
+    border: 2px solid black;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.white {
+    background-color: #eee;
+}
+
+.black {
+    background-color: #888;
+}
+
+.square.highlight {
+  box-shadow: 0 0 0 4px rgba(255, 255, 0, 0.6) inset;
+}
+
+.square.highlight-move {
+  box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.6) inset;
+}
